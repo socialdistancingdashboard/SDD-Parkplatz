@@ -7,7 +7,7 @@ import io
 from datetime import datetime
 
 # Defining certificate related stuff and host of endpoint
-host = 'https://www.kleve.de'
+host = 'www.kleve.de'
  
 # Defining parts of the HTTP request
 request_url='/parkleitsystem/pls.xml'
