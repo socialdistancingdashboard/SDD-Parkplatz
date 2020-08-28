@@ -7,7 +7,7 @@ import io
 from datetime import datetime
 
 # Defining certificate related stuff and host of endpoint
-host = 'https://www.kleve.de'
+host = 'www.kleve.de'
  
 # Defining parts of the HTTP request
 request_url='/parkleitsystem/pls.xml'
@@ -30,6 +30,6 @@ print(response.status, response.reason)
 data = response.read()
 compressed_data = io.BytesIO(data)
 f = open("/tmp/kleve.xml", "w")
-for data in gzip.GzipFile(fileobj=compressed_data):
+for data in compressed_data:
     f.write(str(data,'utf-8'))  
 f.close()

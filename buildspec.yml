@@ -21,15 +21,8 @@ phases:
   build:
     commands:
       - echo BEGIN BUILD PHASE
-      - python mdm_3653002.py
-      - python mdm_3653003.py
-      - python mdm_3653004.py
-      - python mdm_3653005.py
-      - python mdm_3710001.py
-      - python mdm_3710002.py
-      - python mdm_3715001.py
-      - python mdm_3717000.py
-      - python mdm_s3.py
+      - python kleve_parkleitsystem.py
+      - python parkplatz_s3.py
     finally:
       - echo END BUILD PHASE
 
